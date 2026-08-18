@@ -83,7 +83,10 @@ function buscarPaciente() {
     let encontrado = false;
 
     for (let i = 0; i < pacientes.length; i++) {
-        if (pacientes[i].nombre.toLowerCase() === nombreBuscar.toLowerCase()) {
+        if (
+            pacientes[i].nombre.toLowerCase() ===
+            nombreBuscar.toLowerCase()
+        ) {
             encontrado = true;
             break;
         }
