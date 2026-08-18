@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hospital Gustavo Fricke - Gestión de Turnos</title>
+    <link rel="stylesheet" href="kiwa.css">
+</head>
+<body>
+
+    <div id="bienvenida">
+        <h1>Hospital Gustavo Fricke</h1>
+        <h2>Sistema de Gestión de Turnos Médicos</h2>
+
+        <button onclick="mostrarFormulario()">
+            Ingresar al Sistema
+        </button>
+    </div>
+
+    <div id="formulario" style="display:none;">
+
+        <h2>Datos del Paciente</h2>
+
+        <input type="text" id="nombre" placeholder="Nombre completo">
+
+        <input type="number" id="edad" placeholder="Edad">
+
+        <select id="especialidad">
+            <option value="">Seleccione especialidad</option>
+            <option>Medicina General</option>
+            <option>Pediatría</option>
+            <option>Cardiología</option>
+            <option>Traumatología</option>
+            <option>Neurología</option>
+        </select>
+
+        <br><br>
+
+        <button onclick="registrarPaciente()">
+            Registrar Paciente
+        </button>
+
+        <br><br>
+
+        <input type="text" id="buscar" placeholder="Buscar paciente">
+
+        <button onclick="buscarPaciente()">
+            Buscar
+        </button>
+
+        <div id="mensaje"></div>
+
+        <h3>Pacientes en espera: <span id="total">0</span></h3>
+
+        <ul id="lista"></ul>
+
+    </div>
+
+    <script src="kiwu.js"></script>
+
+</body>
+</html>
